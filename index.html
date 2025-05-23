@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Poop Extra Online Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.12.7/dist/ffmpeg.min.js"></script>
+</head>
+<body>
+  <h1>YouTube Poop Extra Online Editor</h1>
+  <div class="uploader">
+    <label>
+      Add Source Videos:
+      <input type="file" accept="video/*" multiple id="videoInput">
+    </label>
+    <label>
+      Add Source Images:
+      <input type="file" accept="image/*" multiple id="imageInput">
+    </label>
+    <label>
+      Add Source Audio:
+      <input type="file" accept="audio/*" multiple id="audioInput">
+    </label>
+    <button id="startEditBtn">Start Editing</button>
+  </div>
+  <div id="mediaPreview"></div>
+  <button id="exportBtn" disabled>Export Remix Video</button>
+  <div id="exportStatus"></div>
+  <video id="outputVideo" controls style="display:none; max-width: 100%"></video>
+  <script src="script.js"></script>
+</body>
+</html>
